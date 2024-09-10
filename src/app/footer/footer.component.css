@@ -1,12 +1,18 @@
-main{
-    height: 30vh;
+.footer{
+    height: 280px;
     background-color: black;
+}
+
+main{
     /* position: absolute;
     bottom: 0; */
     width:100vw;
+    padding: 10px;
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
     align-items: center;
+    color: aliceblue;
 }
 
 .div1 img{
@@ -18,6 +24,7 @@ p{
 }
 
 .div1{
+    padding: 10px;
     width:30%;
     display: flex;
     flex-direction: column;
@@ -31,16 +38,25 @@ p{
 }
 
 .div2{
+    padding: 10px;
     width:30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    margin-bottom: 44px;
+}
+.div3{
+    padding: 10px;
+    width: 30%;
 }
 
 .facebook {
     background-color: blue;
+}
+.instagram{
+    background: linear-gradient(to bottom right, deeppink, purple);
 }
 .clip-circle {
     width: 55px;
@@ -71,4 +87,30 @@ p{
     outline: none;
     border: none;
     overflow: hidden;
+}
+.social-circle:hover .clip-circle {
+	clip-path: circle(60px at 50% 50%);
+	transition: all 0.7s ease-out;
+}
+
+.social-circle:hover{
+	background-color: transparent;
+	transition: 0.5s;
+}
+.social{
+    display: flex;
+}
+
+ul{
+    list-style-type: none;
+}
+a:hover{
+    color:#CAB431;
+}
+
+h6{
+    font-weight: 400;
+    font-size: small;
+    padding: 23px;
+    text-align: center;
 }

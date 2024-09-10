@@ -1,11 +1,17 @@
 <main class="container" [class]="(isDark)? 'bodyDarkmode' : 'bodylightmode'">
     <div class="smallPotoContainer">
-        <img class="smallPoto" (click)="selectPhoto(1)" [src]="photos[0]" alt="">
+        <img class="smallPoto" (click)="selectPhoto(i)" *ngFor="let photo of photos; let i = index" [src]="photos[i]" alt="">
+        <!-- <img class="smallPoto" (click)="selectPhoto(1)" [src]="photos[0]" alt="">
         <img class="smallPoto" (click)="selectPhoto(2)" [src]="photos[1]" alt="">
-        <img class="smallPoto" (click)="selectPhoto(3)" [src]="photos[2]" alt="">
+        <img class="smallPoto" (click)="selectPhoto(3)" [src]="photos[2]" alt=""> -->
+        <!-- Another Way:
+        <img #img1 (click)="changeImage(img1)" src="https://iili.io/Hv8YMw7.jpg" alt=""> -->
+        <!-- Another Way:
+        <img (click)="changeImage($event)" src="https://iili.io/Hv8YMw7.jpg" alt=""> -->
     </div>
     <div style="margin: 10px;">
-        <img class="mainPhoto" [src]="photos[selectedPhoto-1]" />
+        <img class="mainPhoto" [src]="photos[selectedPhoto]" />
+        <!-- <img class="mainPhoto" [src]="photos[selectedPhoto-1]" /> -->
     </div>
     <div style="margin: 10px;">
         <h1>imaginary world 3/4</h1>
@@ -17,3 +23,33 @@
     
 </main>
 
+<!-- Angular Version18
+bdl *ngIf="expression"
+@if(show){
+    <p>Hello</p>
+}elseif(secondShow){
+    <p>a3333</p>
+}else{
+    <p>No</p>
+}
+show w secondShow are booleanvariables in ts
+
+bdl **ngFor="let item of list"
+@for(item of items; track $index; let first = $first; lat last = $last; let count = $count; let idx = $index){
+    track $index de syntax lazm aktbha bs bst3ml idx
+    <p>{{count}}</p> 3dd el items 3ndy
+    <p>{{item}}</p>
+    <p>{{first}}</p> birg3ly true w false en dah awl element ex: law 3ndy kaza sowra w sahm yrg3 lel abl el awla ygbly a5r sora
+    <p>{{last}}</p> birg3ly true w false en deh a5r element ex: law 3ndy kaza sowra w sahm next lel ba3d a5r sora ygbly awl sora
+    feh kaman $even w $odd
+
+} -->
+
+<!-- switch(show){
+    @case (true){
+        <p>yeees</p>
+    }
+    @case (false){
+        <p>nooo</p>
+    }
+} -->

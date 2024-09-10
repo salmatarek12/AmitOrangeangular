@@ -5,10 +5,18 @@
     <mat-icon [class]="(isLightOn)? 'matIconSun' : 'matIconMoon'" (click)="toggleLight()">{{ isLightOn ? 'wb_sunny' : 'dark_mode' }}</mat-icon>
     <a >Home</a>
     <a >Sketches</a>
-    <a >Decorative Pieces</a>
+    <a style=" text-decoration: underline;">Decorative Pieces</a>
     <a >Workshops</a>
     <a >About Us</a>
+    <img style="height: 33px;" (click)="showListToggle()" class="smallNav" src="../../assets/navSmallList.png" alt="">
   </div>
-  
-  
 </nav>
+<div *ngIf="showList" class="nav-links circle-toggle">
+  <ul class="main-links-list">
+    <li><a href="">Home</a></li>
+    <li><a href="">Sketches</a></li>
+    <li><a style=" text-decoration: underline;" href="">Decorative Pieces</a></li>
+    <li><a href="">Workshpos</a></li>
+    <li><a href="">About Us</a></li>
+  </ul>
+</div>

@@ -13,7 +13,8 @@
     height: 121px;
     margin: 5px;
     opacity: 0.5;
-    object-fit: cover;
+    /* de m3 el width ely m7ddah bt2os men el sora 34an mtpxl4 */
+    object-fit: cover; 
     overflow: hidden;
 }
 .smallPoto:hover{

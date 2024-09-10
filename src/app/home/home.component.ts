@@ -1,3 +1,4 @@
+import { ThisReceiver } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -17,6 +18,16 @@ export class HomeComponent implements OnInit {
     this.selectedPhoto = n; 
     console.log("this.selectedPhoto = ", this.selectedPhoto);
   }
+  // AnotherWay
+  // imageSrc= ''
+  // changeImage(p : HTMLImageElement){
+  //   this.imageSrc = p.src; 
+  // }
+  // AnotherWay
+  // changeImage(p : any){
+  //   this.imageSrc = p.tareget.src; 
+  // }
+
   ngOnInit() {
   }
 

@@ -2,6 +2,7 @@
 
 nav{
     height:10vh;
+    width: 100vw;
     color:#CAB431;
     font-family: 'Abel', sans-serif;
     font-size: medium;
@@ -42,6 +43,9 @@ a{
     transition-delay: 2s;
     transition-timing-function: ease; */
 }
+.smallNav{
+    display: none;
+}
 
 a:hover{
     /* text-decoration: underline; */
@@ -56,4 +60,50 @@ nav img{
     
 }
 
+.nav-links {
+    background-color: black;
+    position: absolute;
+    height: 90vh;
+    width: 100%;
+    clip-path: circle(0px at 90% -10%);
+    -webkit-clip-path: circle(0px at 90% -10%);
+    transition: all ease-in 1s;
+    pointer-events: none;
+    flex-direction: column;
+    margin-left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 3;
+}
+.circle-toggle {
+    clip-path: circle(1500px at 90% -10%);
+    -webkit-clip-path: circle(1500px at 90% -10%);
+    transition: all ease-out 1s;
+    pointer-events: all;
+}
+.main-links-list {
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+    list-style: none;
+    display: flex;
+}
+@media screen and (max-width : 537px) {
+    .hyperlinks a{
+        display: none;
+    }
+    .smallNav{
+        display: block;
+    }
+    .nav-links{
+        display: flex;
+    }
+}
+
+li a{
+    color:#CAB431;
+}
 

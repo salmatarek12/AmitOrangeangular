@@ -9,9 +9,13 @@ export class NavbarComponent implements OnInit {
 
   constructor() { }
   isLightOn: boolean = false;
+  showList: boolean = false;
 
   toggleLight() {
     this.isLightOn = !this.isLightOn;
+  }
+  showListToggle(){
+    this.showList = !this.showList;
   }
   ngOnInit() {
   }
