@@ -1,0 +1,14 @@
+<nav [class]="(isLightOn)? 'navLight' : 'navDark'">
+
+  <img src="../../assets/logo.jpg" alt="shit" />
+  <div class="hyperlinks">
+    <mat-icon [class]="(isLightOn)? 'matIconSun' : 'matIconMoon'" (click)="toggleLight()">{{ isLightOn ? 'wb_sunny' : 'dark_mode' }}</mat-icon>
+    <a >Home</a>
+    <a >Sketches</a>
+    <a >Decorative Pieces</a>
+    <a >Workshops</a>
+    <a >About Us</a>
+  </div>
+  
+  
+</nav>

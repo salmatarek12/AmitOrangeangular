@@ -1,0 +1,74 @@
+main{
+    height: 30vh;
+    background-color: black;
+    /* position: absolute;
+    bottom: 0; */
+    width:100vw;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.div1 img{
+    width: 75px;
+}
+
+p{
+    color: aliceblue;
+}
+
+.div1{
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.div2 h3{
+    color: aliceblue;
+}
+
+.div2{
+    width:30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.facebook {
+    background-color: blue;
+}
+.clip-circle {
+    width: 55px;
+    height: 55px;
+    border-radius: 100%;
+    position: absolute;
+    z-index: 1;
+    clip-path: circle(0px at 50% 50%);
+    outline: none;
+    border: none;
+    transition: all 0.5s ease-out;
+}
+.facebook-logo, .instagram-logo {
+    width: 25px;
+    height: 25px;
+    z-index: 2;
+}
+.social-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    position: relative;
+    outline: none;
+    border: none;
+    overflow: hidden;
+}

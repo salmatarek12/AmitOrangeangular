@@ -1,0 +1,35 @@
+.bodyDarkmode{
+    background-color: black;
+}
+.bodylightmode{
+    background-color: white;
+}
+
+.mainPhoto{
+    height : 500px;
+}
+.smallPoto{
+    width: 68.025px;
+    height: 121px;
+    margin: 5px;
+    opacity: 0.5;
+    object-fit: cover;
+    overflow: hidden;
+}
+.smallPoto:hover{
+    opacity: 1;
+}
+.smallPotoContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.container{
+    width: 100vw;
+    padding: 150px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
