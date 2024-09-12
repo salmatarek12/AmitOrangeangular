@@ -7,9 +7,11 @@
 
 .mainPhoto{
     height : 500px;
+    max-width: 100%;
 }
 .smallPoto{
     width: 68.025px;
+    max-width: 100%;
     height: 121px;
     margin: 5px;
     opacity: 0.5;
@@ -27,10 +29,25 @@
     justify-content: space-around;
 }
 
-.container{
+.home{
     width: 100vw;
+    max-width: 100%;
+}
+
+.container{
     padding: 150px 10px;
     display: flex;
     align-items: center;
     justify-content: center
 }
+.container > div{
+    max-width: 100%;
+}
+
+
+/* div p{
+    font-size: 1em;
+}
+div h1{
+    font-size: 1em;
+} */

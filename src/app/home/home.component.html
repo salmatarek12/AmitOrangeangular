@@ -1,27 +1,29 @@
-<main class="container" [class]="(isDark)? 'bodyDarkmode' : 'bodylightmode'">
-    <div class="smallPotoContainer">
-        <img class="smallPoto" (click)="selectPhoto(i)" *ngFor="let photo of photos; let i = index" [src]="photos[i]" alt="">
-        <!-- <img class="smallPoto" (click)="selectPhoto(1)" [src]="photos[0]" alt="">
-        <img class="smallPoto" (click)="selectPhoto(2)" [src]="photos[1]" alt="">
-        <img class="smallPoto" (click)="selectPhoto(3)" [src]="photos[2]" alt=""> -->
-        <!-- Another Way:
-        <img #img1 (click)="changeImage(img1)" src="https://iili.io/Hv8YMw7.jpg" alt=""> -->
-        <!-- Another Way:
-        <img (click)="changeImage($event)" src="https://iili.io/Hv8YMw7.jpg" alt=""> -->
-    </div>
-    <div style="margin: 10px;">
-        <img class="mainPhoto" [src]="photos[selectedPhoto]" />
-        <!-- <img class="mainPhoto" [src]="photos[selectedPhoto-1]" /> -->
-    </div>
-    <div style="margin: 10px;">
-        <h1>imaginary world 3/4</h1>
-        <p>Description : It's not what you look at that matters , it's what you see.</p>
-        <p>Dimensions : 50x60cm</p>          
-        <p>Background Material : Wood</p>
-        <p>Color Type : Oil colors</p>
-    </div>
-    
-</main>
+<div class="home">
+    <main class="container" [class]="(isDark)? 'bodyDarkmode' : 'bodylightmode'">
+        <div class="smallPotoContainer">
+            <img class="smallPoto" (click)="selectPhoto(i)" *ngFor="let photo of photos; let i = index" [src]="photos[i]" alt="">
+            <!-- <img class="smallPoto" (click)="selectPhoto(1)" [src]="photos[0]" alt="">
+            <img class="smallPoto" (click)="selectPhoto(2)" [src]="photos[1]" alt="">
+            <img class="smallPoto" (click)="selectPhoto(3)" [src]="photos[2]" alt=""> -->
+            <!-- Another Way:
+            <img #img1 (click)="changeImage(img1)" src="https://iili.io/Hv8YMw7.jpg" alt=""> -->
+            <!-- Another Way:
+            <img (click)="changeImage($event)" src="https://iili.io/Hv8YMw7.jpg" alt=""> -->
+        </div>
+        <div style="margin: 10px;">
+            <img class="mainPhoto" [src]="photos[selectedPhoto]" />
+            <!-- <img class="mainPhoto" [src]="photos[selectedPhoto-1]" /> -->
+        </div>
+        <div style="margin: 10px;">
+            <h1>imaginary world 3/4</h1>
+            <p>Description : It's not what you look at that matters , it's what you see.</p>
+            <p>Dimensions : 50x60cm</p>          
+            <p>Background Material : Wood</p>
+            <p>Color Type : Oil colors</p>
+        </div>
+        
+    </main>
+</div>
 
 <!-- Angular Version18
 bdl *ngIf="expression"
